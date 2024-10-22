@@ -4,6 +4,9 @@ An assortment of simple mods that let you tweak Factorio to your liking.
 ## <img src="TechnologyPriceMultiplier/thumbnail.png" width="32"> [Technology Price Multiplier](https://mods.factorio.com/mod/TechnologyPriceMultiplier)
 Tweak the price of all science research technologies including infinite ones by a global decimal multiplier. For example, a multiplier of 0.5 means technologies cost half as much and thus take half as long time to research.
 
+## <img src="MachineSpeedMultiplier/thumbnail.png" width="32"> [Machine Speed Multiplier](https://mods.factorio.com/mod/MachineSpeedMultiplier)
+Tweak the global crafting/mining/research speed of machines by categorized decimal multipliers.
+
 ## <img src="BeltSpeedMultiplier/thumbnail.png" width="32"> [Belt Speed Multiplier](https://mods.factorio.com/mod/BeltSpeedMultiplier)
 Tweak the speed of all belts by a global decimal multiplier.  
 
