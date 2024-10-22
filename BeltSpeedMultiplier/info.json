@@ -1,0 +1,9 @@
+{
+    "name": "BeltSpeedMultiplier",
+    "version": "1.0.0",
+    "title": "Belt Speed Multiplier",
+    "author": "Jobus",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0.0"],
+    "description": "Tweak the speed of all belts by a multiplier, including modded."
+}
