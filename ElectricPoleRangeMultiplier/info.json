@@ -1,9 +1,9 @@
 {
     "name": "ElectricPoleRangeMultiplier",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "title": "Electric Pole Range Multiplier",
     "author": "Jobus",
     "factorio_version": "2.0",
     "dependencies": ["base >= 2.0.0"],
-    "description": "Tweak the range of all electric poles and substations by a multiplier, including modded. Cannot go above 64."
+    "description": "Tweak the range of all electric poles and substations by a global decimal multiplier. Both supply area and wire reach is affected. Cannot go above 64."
 }
