@@ -12,3 +12,6 @@ Tweak the speed of all belts by a global decimal multiplier.
 
 ## <img src="ElectricPoleRangeMultiplier/thumbnail.png" width="32"> [Electric Pole Range Multiplier](https://mods.factorio.com/mod/ElectricPoleRangeMultiplier)
 Tweak the range of all electric poles and substations by a global decimal multiplier. Both supply area and wire reach is affected. Cannot go above 64.
+
+## <img src="RoboportRangeMultiplier/thumbnail.png" width="32"> [Roboport Range Multiplier](https://mods.factorio.com/mod/RoboportRangeMultiplier)
+Tweak the logistics and construction ranges of all roboports by global decimal multipliers.
