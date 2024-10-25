@@ -1,5 +1,10 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.01
+Version: 1.0.2
+Date: 26. 10. 2024
+  Features:
+    - Support all mods that add loaders, lane splitters, or linked belts.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
 Date: 23. 10. 2024
   Features:
     - Added AAI Loaders support.
