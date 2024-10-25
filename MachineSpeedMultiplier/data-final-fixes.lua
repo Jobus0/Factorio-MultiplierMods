@@ -17,3 +17,9 @@ end
 for _, prot in pairs(data.raw['mining-drill']) do
     prot.mining_speed = prot.mining_speed*settings.startup['MachineSpeedMultiplier-mining-drill-speed-factor'].value
 end
+
+for _, prot in pairs(data.raw['inserter']) do
+    local multiplier = settings.startup['MachineSpeedMultiplier-inserter-speed-factor'].value
+    prot.rotation_speed = prot.rotation_speed*multiplier
+    prot.extension_speed = prot.extension_speed*multiplier
+end

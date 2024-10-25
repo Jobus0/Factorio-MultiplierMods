@@ -28,5 +28,11 @@ data:extend({
     name = "MachineSpeedMultiplier-mining-drill-speed-factor",
     setting_type = "startup",
     default_value = 1.0
+  },
+  {
+    type = "double-setting",
+    name = "MachineSpeedMultiplier-inserter-speed-factor",
+    setting_type = "startup",
+    default_value = 1.0
   }
 })
