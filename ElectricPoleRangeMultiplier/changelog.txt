@@ -1,5 +1,10 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.01
+Version: 1.0.2
+Date: 28. 10. 2024
+  Bugfixes:
+    - Uncapped maximum supply area from 64x64 to 128x128.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
 Date: 23. 10. 2024
   Bugfixes:
     - Fixed uneven supply areas causing misalignments.
