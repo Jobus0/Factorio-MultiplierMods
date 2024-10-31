@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2024-10-31
+  Bugfixes:
+    - Added multiplier for adjusting the exponential growth of infinite technologies.
