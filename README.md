@@ -15,3 +15,6 @@ Tweak the range of all electric poles and substations by a global decimal multip
 
 ## <img src="RoboportRangeMultiplier/thumbnail.png" width="32"> [Roboport Range Multiplier](https://mods.factorio.com/mod/RoboportRangeMultiplier)
 Tweak the logistics and construction ranges of all roboports by global decimal multipliers.
+
+## <img src="RobotPowerMultiplier/thumbnail.png" width="32"> [Robot Power Multiplier](https://mods.factorio.com/mod/RobotPowerMultiplier)
+Tweak the speed and various power-related values of logistic and construction robots by global decimal multipliers.
