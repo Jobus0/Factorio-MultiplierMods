@@ -1,0 +1,9 @@
+{
+    "name": "RobotPowerMultiplier",
+    "version": "1.0.0",
+    "title": "Robot Power Multiplier",
+    "author": "Jobus",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0.0"],
+    "description": "Tweak the speed and various power-related values of logistic and construction robots by global decimal multipliers."
+}
