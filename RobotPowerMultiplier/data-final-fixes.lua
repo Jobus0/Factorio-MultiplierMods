@@ -63,6 +63,9 @@ for _, type_name in pairs({'roboport', 'roboport-equipment'}) do
     for _, prot in pairs(data.raw[type_name]) do
         prot.charge_approach_distance = math.max(prot.charge_approach_distance*settings.startup['RobotPowerMultiplier-robot-approach-distance-factor'].value, 0)
         prot.charging_energy = multiply_energy(prot.charging_energy, math.max(settings.startup['RobotPowerMultiplier-robot-charging-energy-factor'].value, 0), "W")
-        prot.energy_source.input_flow_limit = multiply_energy(prot.energy_source.input_flow_limit, math.max(settings.startup['RobotPowerMultiplier-robot-charging-energy-factor'].value, 0), "W")
+        
+        if prot.energy_source.input_flow_limit then
+            prot.energy_source.input_flow_limit = multiply_energy(prot.energy_source.input_flow_limit, math.max(settings.startup['RobotPowerMultiplier-robot-charging-energy-factor'].value, 0), "W")
+        end
     end
 end
