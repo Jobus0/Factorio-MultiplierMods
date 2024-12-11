@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2024-12-11
+  Changes:
+    - Add /reconnectroboports console command to recalculate the connections of all placed roboports after you have changed the logistics multiplier. 
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 2024-11-29
   Changes:
