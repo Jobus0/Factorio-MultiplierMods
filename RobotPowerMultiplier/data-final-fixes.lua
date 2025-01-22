@@ -1,5 +1,9 @@
 -- Function to parse and multiply an energy value with extended units
 local function multiply_energy(energy_str, factor, suffix)
+    if energy_str == nil then
+        return nil
+    end
+    
     if factor == 1 then
         return energy_str
     end
