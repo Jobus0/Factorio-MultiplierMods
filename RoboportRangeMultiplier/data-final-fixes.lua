@@ -9,6 +9,15 @@ for _, prot in pairs(data.raw['roboport']) do
             prot.logistics_connection_distance = prot.logistics_radius
         end
     end
+    local radar_range_factor = settings.startup['RoboportRangeMultiplier-radar-range-factor'].value
+    if radar_range_factor ~= 1.0 then
+        if prot.radar_range then
+            prot.radar_range = math.max(math.ceil(prot.radar_range*radar_range_factor), 0)
+        else
+            local max_radius = math.max(prot.logistics_radius, prot.construction_radius)
+            prot.radar_range = math.max(math.ceil(max_radius/32*radar_range_factor), 0)
+        end
+    end
 end
 
 for _, prot in pairs(data.raw['roboport-equipment']) do

@@ -1,9 +1,9 @@
 {
     "name": "RoboportRangeMultiplier",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "title": "Roboport Range Multiplier",
     "author": "Jobus",
     "factorio_version": "2.0",
     "dependencies": ["base >= 2.0.0"],
-    "description": "Tweak the logistics and construction ranges of all roboports by global decimal multipliers."
+    "description": "Tweak the ranges of all roboports by global decimal multipliers."
 }
