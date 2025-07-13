@@ -2,7 +2,7 @@
 Version: 1.1.1
 Date: 2025-07-13
   Changes:
-    - Added simplified Chinese translation.
+    - Added simplified Chinese translation (Thanks to Lexcellent for the contribution).
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2024-10-31
