@@ -7,17 +7,21 @@ local price_tier_scaling = settings.startup["TechnologyPriceMultiplier-price-tie
 local exponent_base_pattern = "^%d*%.?%d+"
 local tier_cache = {}
 
-function count_prerequisite_tier(technology)
+function count_prerequisite_tier(technology, visiting)
     if tier_cache[technology.name] then
         return tier_cache[technology.name]
     end
+    if visiting[technology.name] then
+        return 0
+    end
+    visiting[technology.name] = true
 
     local max_prereq_count = 0
     if technology.prerequisites and #technology.prerequisites > 0 then
         for _, prereq_key in ipairs(technology.prerequisites) do
             local prereq_tech = technologies[prereq_key]
             if prereq_tech and prereq_tech ~= technology.name then
-                local current_prereq_count = count_prerequisite_tier(prereq_tech)
+                local current_prereq_count = count_prerequisite_tier(prereq_tech, visiting)
 
                 if prereq_tech.essential and prereq_tech.unit ~= nil then
                     current_prereq_count = current_prereq_count + 1
@@ -30,6 +34,7 @@ function count_prerequisite_tier(technology)
         end
     end
     
+    visiting[technology.name] = nil
     tier_cache[technology.name] = max_prereq_count
     return max_prereq_count
 end
@@ -38,7 +43,7 @@ for _, technology in pairs(technologies) do
     if (technology.unit) then
         local tier = 0
         if (price_tier_scaling ~= 1) then
-            tier = count_prerequisite_tier(technology)
+            tier = count_prerequisite_tier(technology, {})
         end
 
         if (technology.unit.count ~= nil) then
