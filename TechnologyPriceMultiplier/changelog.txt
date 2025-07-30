@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2025-07-30
+  Changes:
+    - Optimized initial loading screen calculation of tiers for tier-based scaling.
+  Bugfixes:
+    - Handling of circular technology prerequisites.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 2025-07-27
   Changes:
