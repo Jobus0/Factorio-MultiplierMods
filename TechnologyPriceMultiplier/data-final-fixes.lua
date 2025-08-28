@@ -4,6 +4,7 @@ local price_factor = settings.startup["TechnologyPriceMultiplier-price-factor"].
 local price_exponent = settings.startup["TechnologyPriceMultiplier-price-exponent-factor"].value
 local price_tier_scaling = settings.startup["TechnologyPriceMultiplier-price-tier-scaling-factor"].value
 local price_tier_curve = settings.startup["TechnologyPriceMultiplier-price-tier-scaling-curve"].value
+local price_tier_start = settings.startup["TechnologyPriceMultiplier-price-tier-scaling-start"].value
 
 local exponent_base_pattern = "^%d*%.?%d+"
 local tier_cache = {}
@@ -40,11 +41,14 @@ function count_prerequisite_tier(technology, visiting)
     return max_prereq_count
 end
 
+local max_tier = 0
 for _, technology in pairs(technologies) do
     if (technology.unit) then
         local tier = 0
         if (price_tier_scaling ~= 1) then
             tier = count_prerequisite_tier(technology, {})
+            max_tier = math.max(max_tier, tier)
+            tier = math.max(tier + 1 - price_tier_start, 0)
         end
 
         if (technology.unit.count ~= nil) then
@@ -60,4 +64,8 @@ for _, technology in pairs(technologies) do
             technology.unit.count_formula = '(' .. technology.unit.count_formula .. ')*' .. price_factor .. "*" .. price_tier_scaling .. "^" .. tier .. "^" .. price_tier_curve
         end
     end
+end
+
+if (max_tier > 0) then
+    log("Highest tech tier: " .. max_tier)
 end

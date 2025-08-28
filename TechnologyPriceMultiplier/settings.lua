@@ -28,5 +28,13 @@ data:extend({
     default_value = 1.0,
     minimum_value = 0.1,
     order = "3"
+  },
+  {
+    type = "int-setting",
+    name = "TechnologyPriceMultiplier-price-tier-scaling-start",
+    setting_type = "startup",
+    default_value = 1,
+    minimum_value = 1,
+    order = "4"
   }
 })

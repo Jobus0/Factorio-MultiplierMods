@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2025-08-28
+  Changes:
+    - Added option to adjust what tech tier to start the tier-based cost scaling.
+    - Added logging of the highest tech tier during the loading screen.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.1
 Date: 2025-07-30
   Changes:
