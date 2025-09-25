@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.1
+Date: 2025-09-25
+  Changes:
+    - Made the Price Factor option unable to increase the price of technologies flagged with 'ignore_tech_cost_multiplier' (used for initial technologies, such as Automation).
+---------------------------------------------------------------------------------------------------
 Version: 1.4.0
 Date: 2025-08-28
   Changes:

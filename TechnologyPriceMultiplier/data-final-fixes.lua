@@ -51,8 +51,14 @@ for _, technology in pairs(technologies) do
             tier = math.max(tier + 1 - price_tier_start, 0)
         end
 
+        local individual_price_factor = price_factor
+
+        if (technology.ignore_tech_cost_multiplier and individual_price_factor > 1.0) then
+            individual_price_factor = 1.0
+        end
+
         if (technology.unit.count ~= nil) then
-            technology.unit.count = math.max(math.ceil(technology.unit.count*price_factor*price_tier_scaling^tier^price_tier_curve), 1)
+            technology.unit.count = math.max(math.ceil(technology.unit.count*individual_price_factor*price_tier_scaling^tier^price_tier_curve), 1)
         elseif (technology.unit.count_formula ~= nil) then
             if (price_exponent ~= 1) then
                 local base = string.match(technology.unit.count_formula, exponent_base_pattern)
@@ -61,7 +67,7 @@ for _, technology in pairs(technologies) do
                     technology.unit.count_formula = technology.unit.count_formula:gsub(exponent_base_pattern, replacement, 1)
                 end
             end
-            technology.unit.count_formula = '(' .. technology.unit.count_formula .. ')*' .. price_factor .. "*" .. price_tier_scaling .. "^" .. tier .. "^" .. price_tier_curve
+            technology.unit.count_formula = '(' .. technology.unit.count_formula .. ')*' .. individual_price_factor .. "*" .. price_tier_scaling .. "^" .. tier .. "^" .. price_tier_curve
         end
     end
 end
