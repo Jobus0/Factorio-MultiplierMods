@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2026-02-21
+  Changes:
+    - Added a "Maximum gap" setting to prevent overly large unpowered gaps when click-and-drag placing poles.
+    - Improved tile-rounding logic for supply areas and wire distances to be more accurate to the multiplier.
+    - BREAKING: Due to the rounding fix, some electric poles may have a slightly smaller supply area than in the previous version. If some machines in your existing factory lost power after updating, please slightly increase the "Range factor" setting to fix it.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2025-07-13
   Changes:
