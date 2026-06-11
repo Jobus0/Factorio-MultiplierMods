@@ -1,9 +1,19 @@
 {
     "name": "TechnologyPriceMultiplier",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "title": "Technology Price Multiplier",
     "author": "Jobus",
     "factorio_version": "2.0",
-    "dependencies": ["base >= 2.0.0"],
+    "dependencies": [
+        "base >= 2.0.0",
+        "(?) space-age",
+        "(?) space-exploration",
+        "(?) Krastorio2",
+        "(?) pycoalprocessing",
+        "(?) nullius",
+        "(?) SeaBlock",
+        "(?) exotic-industries",
+        "(?) Ultracube"
+    ],
     "description": "Tweak the price of all science research technologies including infinite ones by a global decimal multiplier. For example, a multiplier of 0.5 means technologies cost half as much and thus take half as long time to research."
 }
