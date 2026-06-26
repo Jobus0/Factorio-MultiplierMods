@@ -60,6 +60,9 @@ for _, type_name in pairs({'logistic-robot', 'construction-robot'}) do
         if (prot.energy_per_move ~= nil) then
             prot.energy_per_move = multiply_energy(prot.energy_per_move, math.max(settings.startup['RobotPowerMultiplier-robot-movement-energy-consumption-factor'].value, 0), "J")
         end
+        if (prot.energy_per_tick ~= nil) then
+            prot.energy_per_tick = multiply_energy(prot.energy_per_tick, math.max(settings.startup['RobotPowerMultiplier-robot-movement-energy-consumption-factor'].value, 0), "J")
+        end
     end
 end
 

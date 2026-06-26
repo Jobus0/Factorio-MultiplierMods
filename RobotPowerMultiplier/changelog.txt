@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2026-06-26
+  Changes:
+    - Updated for Factorio 2.1.
+    - Energy consumption multiplier now also affects the passive per-tick energy consumption.
+    - Added localization for Spanish, Portuguese, French, Russian, Japanese, and Korean.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2025-07-13
   Changes:

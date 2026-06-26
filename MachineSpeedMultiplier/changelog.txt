@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2026-06-26
+  Changes:
+    - Updated for Factorio 2.1.
+    - Added localization for Spanish, Portuguese, French, Russian, Japanese, and Korean.
+    - Fixed Chinese translation mistake.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 2025-07-13
   Changes:

@@ -1,11 +1,11 @@
 {
     "name": "TechnologyPriceMultiplier",
-    "version": "1.5.1",
+    "version": "1.6.0",
     "title": "Technology Price Multiplier",
     "author": "Jobus",
-    "factorio_version": "2.0",
+    "factorio_version": "2.1",
     "dependencies": [
-        "base >= 2.0.0",
+        "base >= 2.1.7",
         "(?) space-age",
         "(?) space-exploration",
         "(?) Krastorio2",
