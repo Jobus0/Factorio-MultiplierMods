@@ -2,19 +2,19 @@
 An assortment of simple mods that let you tweak Factorio to your liking.
 
 ## <img src="TechnologyPriceMultiplier/thumbnail.png" width="32"> [Technology Price Multiplier](https://mods.factorio.com/mod/TechnologyPriceMultiplier)
-Tweak the price of all science research technologies including infinite ones by a global decimal multiplier. For example, a multiplier of 0.5 means technologies cost half as much and thus take half as long time to research.
+Precisely tweak technology costs with decimal multipliers (0.5x, 1.2x, etc.), offering fine-tuned control beyond the vanilla game's integer-only setting. Also includes advanced options for infinite tech and tier-based cost scaling.
 
 ## <img src="MachineSpeedMultiplier/thumbnail.png" width="32"> [Machine Speed Multiplier](https://mods.factorio.com/mod/MachineSpeedMultiplier)
-Tweak the global working speed of machines by categorical decimal multipliers.
+Globally tweak the working speed of different machine types with simple multipliers.
 
 ## <img src="BeltSpeedMultiplier/thumbnail.png" width="32"> [Belt Speed Multiplier](https://mods.factorio.com/mod/BeltSpeedMultiplier)
-Tweak the speed of all belts by a global decimal multiplier.  
+Globally tweak the speed of all transport belts, including those from other mods, using a simple multiplier.
 
 ## <img src="ElectricPoleRangeMultiplier/thumbnail.png" width="32"> [Electric Pole Range Multiplier](https://mods.factorio.com/mod/ElectricPoleRangeMultiplier)
-Tweak the range of all electric poles and substations by a global decimal multiplier. Both supply area and wire reach is affected. Cannot go above 64.
+Globally tweak the range of all electric poles and substations, including those from other mods, using a simple multiplier.
 
 ## <img src="RoboportRangeMultiplier/thumbnail.png" width="32"> [Roboport Range Multiplier](https://mods.factorio.com/mod/RoboportRangeMultiplier)
-Tweak the logistics and construction ranges of all roboports by global decimal multipliers.
+Globally tweak the logistics, construction, and radar ranges of all roboports using simple multipliers.
 
 ## <img src="RobotPowerMultiplier/thumbnail.png" width="32"> [Robot Power Multiplier](https://mods.factorio.com/mod/RobotPowerMultiplier)
-Tweak the speed and various power-related values of logistic and construction robots by global decimal multipliers.
+Globally tweak the performance of all logistic and construction robots. Adjust their speed, energy capacity, charging rate, and power consumption using simple multipliers.
